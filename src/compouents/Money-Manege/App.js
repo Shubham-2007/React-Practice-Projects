@@ -25,12 +25,16 @@ const App = () => {
       date: new Date(2020, 1, 15)
     },
   ]
+
+  const addExpenseHandler = expense => {
+    console.log(expense);
+  }
   return (
     <Card className="expenses">
       <p className="project-number">
         React Project 3
       </p>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <ExpenseItem
         title={expenseItem[0].title}
         amount={expenseItem[0].amount}
