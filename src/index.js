@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './compouents/TO-Do_List/App';  //Project 1
+// import App from './compouents/Tic_Tact-To/App';    //Project 2
+import App from './compouents/Money-Manege/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
