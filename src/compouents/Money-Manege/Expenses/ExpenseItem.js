@@ -7,23 +7,25 @@ function ExpenseItem(props) {
     // const expenseDate = new Date(2020, 10, 20);
     // const expenseTitle = "Car Insurance";
     // const expenseAmount = 256.32
-    const [title, setTitle] = useState(props.title);
+    // const [title, setTitle] = useState(props.title);
 
-    const clickHandler = () => {
-
-        setTitle("yash");
-    }
+    // const clickHandler = () => {
+    //     setTitle("yash");
+    // }
+    // console.log('ExpenseItem');
     return (
-        <Card className="expense-item">
-            <ExpenseData date={props.date} />
-            <div className="expense-item__description">
-                <h2>{title}</h2>
-                <div className="expense-item__price">
-                    $ {props.amount}
+        <li>
+            <Card className="expense-item">
+                <ExpenseData date={props.date} />
+                <div className="expense-item__description">
+                    <h2>{props.title}</h2>
+                    <div className="expense-item__price">
+                        $ {props.amount}
+                    </div>
                 </div>
-            </div>
-            <button onClick={console.log({ title }), clickHandler}>Change Title</button>
-        </Card>
+                {/* <button onClick={console.log({ title }), clickHandler}>Change Title</button> */}
+            </Card>
+        </li>
     );
 }
 
