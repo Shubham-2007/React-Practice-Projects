@@ -2,10 +2,10 @@ import React from "react";
 // import ChartBar from './ChartBar';
 import './ChartBar.css';
 
-
-const ChartBar = props => {
+const ChartBar = (props) => {
     let barFillHeight = '0%';
-    if (props.max > 0) {
+
+    if (props.maxValue > 0) {
         barFillHeight = Math.round((props.value / props.maxValue) * 100) + '%';
     }
 
@@ -13,7 +13,7 @@ const ChartBar = props => {
         < div className="chart-bar">
             <div className="chart-bar_inner">
                 <div className="chart-bar_fill"
-                    style={{ height: barFillheight }}
+                    style={{ height: barFillHeight }}
                 >
 
                 </div>
