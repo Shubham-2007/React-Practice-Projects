@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
-import NewComp from './newcomp';
+import NewComp from './compouents/newcomp';
 import React, { Component } from "react";
-import AddNinja from './addNinja'
+import AddNinja from './compouents/addNinja'
 
 class App extends Component {
   state = {
