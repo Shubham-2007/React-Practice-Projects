@@ -5,6 +5,7 @@ import TO_D0_List from "./TO-Do_List/App";
 import Tic_Tact_To from "./Tic_Tact-To/App";
 import Styled_To_Do from "./Styled_To-Do/App";
 import Money_Expenses from "./Money-Expenses/App";
+import Add_User_Info from "./Add-User-Info/App";
 
 export default class App extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class App extends Component {
             <div className="flex-container_option"><NavLink to="/project2">Tic-Tact-To</NavLink></div>
             <div className="flex-container_option"><NavLink to="/project3">Styled-To-Do</NavLink></div>
             <div className="flex-container_option"><NavLink to="/project4">Money-Expenses</NavLink></div>
+            <div className="flex-container_option"><NavLink to="/project5">Add-User-Info</NavLink></div>
           </div>
           <Routes>
             <Route path="/" element={<div>WelCome TO React Project</div>} />
@@ -23,6 +25,7 @@ export default class App extends Component {
             <Route path="/project2" element={<Tic_Tact_To />} />
             <Route path="/project3" element={<Styled_To_Do />} />
             <Route path="/project4" element={<Money_Expenses />} />
+            <Route path="/project5" element={<Add_User_Info />} />
           </Routes>
         </div>
       </BrowserRouter >

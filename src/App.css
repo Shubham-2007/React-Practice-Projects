@@ -6,16 +6,15 @@
 
 .flex-container_option {
   background-color: #f1f1f1;
-  width: 25%;
-  margin: 10px;
+  margin: 10px auto;
+  padding: 10px;
   text-align: center;
-  line-height: 75px;
   font-size: 24px;
   color: #000;
 
 }
 
-.flex-container_option:hover{
+.flex-container_option:hover {
   background-color: #333333;
   color: white;
 }
