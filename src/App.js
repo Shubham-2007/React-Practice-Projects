@@ -13,7 +13,7 @@ export default class App extends Component {
       <BrowserRouter>
         <div >
           <div className="flex-container">
-            <div className="flex-container_option"><NavLink to="/project1" style={{ }}>TO-D0-List</NavLink></div>
+            <div className="flex-container_option"><NavLink to="/project1">TO-D0-List</NavLink></div>
             <div className="flex-container_option"><NavLink to="/project2">Tic-Tact-To</NavLink></div>
             <div className="flex-container_option"><NavLink to="/project3">Styled-To-Do</NavLink></div>
             <div className="flex-container_option"><NavLink to="/project4">Money-Expenses</NavLink></div>
