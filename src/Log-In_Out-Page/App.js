@@ -1,11 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import MainHeader from './components/MainHeader/MainHeader';
 
 function App() {
+
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // console.log("loggin" + stroedUserLoggedInInformation);
+
+  useEffect(() => {
+    const stroedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
+
+    if (stroedUserLoggedInInformation === '1') {
+      setIsLoggedIn(true);
+    }
+  }, []);
 
   const loginHandler = (email, password) => {
     // We should of course check email and password
@@ -15,6 +25,7 @@ function App() {
   };
 
   const logoutHandler = () => {
+    localStorage.removeItem('isLoggedIn');
     setIsLoggedIn(false);
   };
 
