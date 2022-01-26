@@ -27,7 +27,7 @@ export default class App extends Component {
             <Route path="/project3" element={<Styled_To_Do />} />
             <Route path="/project4" element={<Money_Expenses />} />
             <Route path="/project5" element={<Add_User_Info />} />
-            <Route path="/project6" element={<Log_In_Out_Page />} />
+            // <Route path="/project6" element={<Log_In_Out_Page />} />
           </Routes>
         </div>
       </BrowserRouter >
