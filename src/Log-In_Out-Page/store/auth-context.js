@@ -26,7 +26,7 @@ export const AuthContextProvider = (props) => {
     };
 
     const logoutHandler = () => {
-        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('isLoggedIn'); 
         setIsLoggedIn(false);
     };
 
@@ -38,7 +38,7 @@ export const AuthContextProvider = (props) => {
                 onLogin: loginHandler,
             }}
         >
-            {props.childern}
+            {props.children}
         </AuthContext.Provider>
     )
 
