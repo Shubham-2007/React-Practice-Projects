@@ -14,7 +14,7 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div >
+        <div className="flex_horizon">
           <div className="flex-container">
             <div className="flex-container_option"><NavLink to="/project1">TO-D0-List</NavLink></div>
             <div className="flex-container_option"><NavLink to="/project2">Tic-Tact-To</NavLink></div>
@@ -39,8 +39,7 @@ export default class App extends Component {
             <Route path="/project7" element={<Food_Order_App />} />
           </Routes>
         </div>
-      </
-      BrowserRouter >
+      </BrowserRouter >
     );
   }
 }
