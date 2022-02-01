@@ -32,7 +32,9 @@ const cartReducer = (state, action) => {
         }
     }
 
-    if (action.type === 'REMOVE') { }
+    if (action.type === 'REMOVE') {
+        
+    }
 
     return defaultCartState;
 }
